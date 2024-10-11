@@ -1,0 +1,300 @@
+.site-header {
+    display: flex;
+    width: 100%;
+    background-color: #43281c;
+    color: #e5d3b3;
+    font-weight: 900;
+    font-size: larger;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+body {
+    background-color: #43281c;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    margin-right: 10px;
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.checkout-info {
+    display: grid;
+    margin: -10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 20px 20px 20px;
+    grid-template-rows: 
+    0.5fr
+    1fr
+    1fr
+    1fr;
+
+    grid-template-areas: 
+        "cartItems orderInfo"
+        "cartItems orderPayment"
+        "orderPaymentInfo orderPaymentInfo"
+        "orderButton orderButton"
+    ;
+}
+
+.items-header {
+    margin: 0px;
+}
+
+.cart-items-section {
+    display: grid;
+    grid-area: cartItems;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 15px 15px 15px;
+    background-color: rgb(248, 235, 224);
+    color: #a97964;
+
+    border-bottom: #43281c;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cart-items {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.item-quantity {
+    color: rgb(77, 77, 77);
+    grid-area: itemQuantity;
+}
+
+.order-cart-item-1 {
+    display: grid;
+
+    padding-right: 30px;
+
+    grid-template-columns: 0.5fr 6fr 1fr;
+    grid-template-areas: 
+        "itemQuantity itemName itemPrice"
+        "itemQuantity itemDescription itemPrice"
+    ;
+}
+
+.order-cart-item-2 {
+    display: grid;
+
+    padding-right: 30px;
+
+    grid-template-columns: 0.5fr 6fr 1fr;
+
+    grid-template-areas: 
+        "itemQuantity itemName itemPrice"
+        "itemQuantity itemDescription1 itemPrice"
+        "itemQuantity itemDescription2 itemPrice"
+    ;
+}
+
+.order-cart-item-3 {
+    display: grid;
+
+    padding-right: 30px;
+
+    grid-template-columns: 0.5fr 6fr 1fr;
+    grid-template-areas: 
+        "itemQuantity itemName itemPrice"
+        "itemQuantity itemDescription itemPrice"
+    ;
+}
+
+.mid-cart-item {
+    border-top: 2px solid #dbb5a4;
+    border-bottom: 2px solid #dbb5a4;
+}
+
+.item-name {
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+    grid-area: itemName;
+}
+
+.item-description {
+    margin-top: -10px;
+    grid-area: itemDescription;
+}
+
+.item-description1 {
+    grid-area: itemDescription1;
+}
+
+.item-description2 {
+    grid-area: itemDescription2;
+}
+
+.item-price {
+    display: flex;
+    align-content: end;
+    justify-content: end;
+    grid-area: itemPrice;
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+}
+
+.order-info-header {
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.order-info {
+    display: "flex";
+    grid-area: orderInfo;
+    align-content: start;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px 30px 15px 10px;
+    background-color: rgb(248, 235, 224);
+    color: #a97964;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.order-name {
+    width: 100%;
+    padding: 10px;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+}
+
+.order-name-label {
+    position: absolute;
+    left: 30px;
+    top: -7px;
+    padding: 0px 5px;
+    font-size: 11px;
+    background-color: rgb(248, 235, 224);
+}
+
+.order-payment  {
+    display: grid;
+    grid-area: orderPayment;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px 30px 15px 15px;
+    background-color: rgb(248, 235, 224);
+    color: #a97964;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+    grid-template-rows: 
+        1fr
+        0.5fr
+        0.5fr
+    ;
+}
+
+.card-number-label {
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0px 5px;
+    font-size: 11px;
+    background-color: rgb(248, 235, 224);
+}
+
+.ccv-number-label {
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0px 5px;
+    font-size: 11px;
+    background-color: rgb(248, 235, 224);
+}
+
+.card-number {
+    width: 100%;
+    padding: 10px;
+}
+
+.ccv-number {
+    width: 40%;
+    padding: 10px;
+}
+
+.order-payment-header {
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+.order-payment-info {
+    display: grid;
+    grid-area: orderPaymentInfo;
+}
+
+.order-button {
+    grid-area: orderButton;
+}
+
+.input-text {
+    border-color: #a97964;
+    border-radius: 100px;
+    border-style: solid;
+    background-color: rgb(248, 235, 224);
+}
+
+.subtotal-area {
+    display: flex;
+    grid-area: subtotal;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tax-area {
+    display: flex;
+    grid-area: tax;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+
+.total-area {
+    display: flex;
+    grid-area: total;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: -100px;
+}
+
+.order-payment-info-label {
+    margin-right: 250px;
+}
+
+.order-payment-info {
+    display: grid;
+    justify-content: center;
+
+    grid-template-rows: 
+    2fr
+    0.5fr
+    0.5fr
+    0.5fr
+    1fr;
+    grid-template-areas:
+        "none"
+        "subtotal"
+        "tax"
+        "total"
+    ;
+}
+
+.button {
+    background-color: #deb993;
+    border-radius: 100px;
+    width: 100%;
+    min-height: 50px;
+    border-style: solid;
+    border-color: #deb993;
+}
