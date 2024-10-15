@@ -1,0 +1,159 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.calculator {
+    display: grid;
+    width: 400px;
+    height: 600px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "resultText  resultText   resultText       resultText"
+        "clearButton clearButton  backspaceButton  actionButtons"
+        "numButtons  numButtons   numButtons       actionButtons"
+        "numButtons  numButtons   numButtons       actionButtons"
+        "numButtons  numButtons   numButtons       actionButtons"
+        "numButtons  numButtons   numButtons       actionButtons"
+    ;
+}
+
+.action-buttons {
+    display: grid;
+    grid-area: actionButtons;
+
+    grid-template-areas:
+        "divideButton"
+        "multButton"
+        "minusButton"
+        "plusButton"
+        "equalsButton"
+    ;
+}
+
+.num-buttons {
+    display: grid;
+    grid-area: numButtons;
+
+    grid-template-areas: 
+        "sevenButton eightButton nineButton"
+        "fourButton  fiveButton  sixButton"
+        "oneButton   twoButton   threeButton"
+        "zeroButton  zeroButton  zeroButton"
+    ;
+}
+
+.result-header {
+    font-size: xxx-large;
+    padding: 0px 5px 0px 0px;
+    margin: 0px;
+}
+
+.button {
+    background-color: #d3d3d3;
+    color: black;
+    font-weight: 500;
+    border-color: black;
+    font-size: xxx-large;
+    border-style: solid;
+    border-width: 1px;
+
+    &:hover {
+        background-color: #e7e7e7;
+    }
+
+    &:active {
+        background-color: #b1b1b1;
+    }
+}
+
+.action-button {
+    background-color: orange;
+    color: white;
+
+    &:hover {
+        background-color: #ffbe46;
+    }
+
+    &:active {
+        background-color: #db8e00;
+    }
+}
+
+.result {
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: center;
+    justify-content: right;
+    grid-area: resultText;
+}
+
+.clear-button {
+    grid-area: clearButton;
+}
+
+.backspace-button {
+    grid-area: backspaceButton;
+}
+
+.divide-button {
+    grid-area: divideButton;
+}
+
+.mult-button {
+    grid-area: multButton;
+}
+
+.minus-button {
+    grid-area: minusButton;
+}
+
+.plus-button {
+    grid-area: plusButton;
+}
+
+.equals-button {
+    grid-area: equalsButton;
+}
+
+.num-button-zero {
+    grid-area: zeroButton;
+}
+
+.num-button-one {
+    grid-area: oneButton;
+}
+
+.num-button-two {
+    grid-area: twoButton;
+}
+
+.num-button-three {
+    grid-area: threeButton;
+}
+
+.num-button-four {
+    grid-area: fourButton;
+}
+
+.num-button-five {
+    grid-area: fiveButton;
+}
+
+.num-button-six {
+    grid-area: sixButton;
+}
+
+.num-button-seven {
+    grid-area: sevenButton;
+}
+
+.num-button-eight {
+    grid-area: eightButton;
+}
+
+.num-button-nine {
+    grid-area: nineButton;
+}
