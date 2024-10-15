@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Masters</title>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="css.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <img class="logo" src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee masters logo">
-        Coffee Masters
+      <img
+        class="logo"
+        src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png"
+        alt="coffee masters logo"
+      />
+      Coffee Masters
     </header>
     <div class="checkout-info">
-        <div class="cart-items-section">
-            <h3 class="items-header">ITEMS</h3>
-            <ul class="cart-items">
-                <li class="order-cart-item-1">
-                    <p class="item-quantity">1x</p>
-                    <p class="item-name">Cappuccino</p>
-                    <p class="item-description">Lite foam</p>
-                    <p class="item-price">$3.35</p>
-                </li>
-                <li class="order-cart-item-2 mid-cart-item">
-                    <p class="item-quantity">1x</p>
-                    <p class="item-name">Cappuccino</p>
-                    <p class="item-description1 item-description">Lite milk</p>
-                    <p class="item-description2 item-description">Double espresso</p>
-                    <p class="item-price">$7.90</p>
-                </li>
-                <li class="order-cart-item-3">
-                    <p class="item-quantity">2x</p>
-                    <p class="item-name">Croissant</p>
-                    <p class="item-description">Butter</p>
-                    <p class="item-price">$2.45</p>
-                </li>
-            </ul>
+      <div class="cart-items-section">
+        <h3 class="items-header">ITEMS</h3>
+        <ul class="cart-items">
+          <li class="order-cart-item-1">
+            <p class="item-quantity">1x</p>
+            <p class="item-name">Cappuccino</p>
+            <p class="item-description">Lite foam</p>
+            <p class="item-price">$3.35</p>
+          </li>
+          <li class="order-cart-item-2 mid-cart-item">
+            <p class="item-quantity">1x</p>
+            <p class="item-name">Cappuccino</p>
+            <p class="item-description1 item-description">Lite milk</p>
+            <p class="item-description2 item-description">Double espresso</p>
+            <p class="item-price">$7.90</p>
+          </li>
+          <li class="order-cart-item-3">
+            <p class="item-quantity">2x</p>
+            <p class="item-name">Croissant</p>
+            <p class="item-description">Butter</p>
+            <p class="item-price">$2.45</p>
+          </li>
+        </ul>
+      </div>
+      <div class="order-info">
+        <h3 class="order-info-header">NAME</h3>
+        <div class="input-group">
+          <label for="order-name" class="order-name-label"
+            >Name for order</label
+          >
+          <input id="order-name" type="text" class="order-name input-text" />
         </div>
-        <div class="order-info">
-            <h3 class="order-info-header">NAME</h3>
-            <div class="input-group">
-                <label for="order-name" class="order-name-label">Name for order</label>
-                <input id="order-name" type="text" class="order-name input-text">
-            </div>
+      </div>
+      <div class="order-payment">
+        <h3 class="order-payment-header">PAYMENT</h3>
+        <div class="input-group">
+          <label for="card-number" class="card-number-label">Card number</label>
+          <input id="card-number" type="text" class="card-number input-text" />
         </div>
-        <div class="order-payment">
-            <h3 class="order-payment-header">PAYMENT</h3>
-            <div class="input-group">
-                <label for="card-number" class="card-number-label">Card number</label>
-                <input id="card-number" type="text" class="card-number input-text">
-            </div>
-            <div class="input-group">
-                <label for="ccv number" class="ccv-number-label">CCV Number</label>
-                <input type="text" class="ccv-number input-text">
-            </div>
+        <div class="input-group">
+          <label for="ccv number" class="ccv-number-label">CCV Number</label>
+          <input type="text" class="ccv-number input-text" />
         </div>
-        <div class="order-payment-info">
-            <div class="subtotal-area">
-                <label for="subtotal" class="order-payment-info-label">Subtotal:</label>
-                <p id="subtotal" class="subtotal">$9.65</p>
-            </div>
-            <div class="tax-area">
-                <label for="tax" class="order-payment-info-label">Tax:</label>
-                <p id="tax" class="tax">$0.82</p>
-            </div>
-            <div class="total-area">
-                <label for="total" class="order-payment-info-label">Total:</label>
-                <p id="total" class="total">$10.47</p>
-            </div>
+      </div>
+      <div class="order-payment-info">
+        <div class="subtotal-area">
+          <label for="subtotal" class="order-payment-info-label"
+            >Subtotal:</label
+          >
+          <p id="subtotal" class="subtotal">$9.65</p>
         </div>
-        <div class="order-button">
-            <button class="button">Place order</button>
+        <div class="tax-area">
+          <label for="tax" class="order-payment-info-label">Tax:</label>
+          <p id="tax" class="tax">$0.82</p>
         </div>
+        <div class="total-area">
+          <label for="total" class="order-payment-info-label">Total:</label>
+          <p id="total" class="total">$10.47</p>
+        </div>
+      </div>
+      <div class="order-button">
+        <button class="button">Place order</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>

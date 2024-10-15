@@ -1,79 +1,78 @@
 .header {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 10px;
 }
 
 .nav {
-    border: 2px;
-    border-style: solid;
-    margin: -1px;
+  border: 2px;
+  border-style: solid;
+  margin: -1px;
 }
 
 .nav-list {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    font-weight: bold;
-    font-size: x-large;
-    padding: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  font-weight: bold;
+  font-size: x-large;
+  padding: 0;
 }
 
 .link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .article-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  max-height: 300px;
 }
 
-
 .article {
-    border: 2px;
-    border-style: solid;
-    padding: 10px;
-    margin: -1px;
+  border: 2px;
+  border-style: solid;
+  padding: 10px;
+  margin: -1px;
 }
 
 .article-title {
-    text-align: center
+  text-align: center;
 }
 
 .article-1 {
-    grid-area: article1;
+  grid-area: article1;
 }
 
 .article-2 {
-    grid-area: article2;
+  grid-area: article2;
 }
 
 .article-3 {
-    grid-area: article3;
+  grid-area: article3;
 }
 
 .article-4 {
-    grid-area: article4;
+  grid-area: article4;
 }
 
 .article-5 {
-    grid-area: article5;
+  grid-area: article5;
 }
 
 .articles {
-    display: grid;
-    width: 100%;
-    grid-template-areas: 
+  display: grid;
+  width: 100%;
+  grid-template-areas:
     "article1 article2 article3"
     "article4 article5 article5";
 }
